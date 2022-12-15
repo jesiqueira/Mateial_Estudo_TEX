@@ -1,0 +1,113 @@
+/* CSS STYLES */
+
+/* LOGO */
+div.logo{
+    width: 30vw;
+    min-width: 350px;
+    text-align: center;
+    margin-bottom: 12px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+}
+div.logo span{
+    font-family: 'Lobster Two', cursive;
+    font-size: 75%;
+}
+
+.lobster{
+    font-family: 'Lobster Two', cursive;
+}
+
+h2{
+    color: blue;
+}
+.h2Color{
+    color: #9999;
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+article#pratos p{
+    color: #9999;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+article#pratos table td p{
+    color: #000;
+}
+
+header img{
+    vertical-align: middle;
+}
+
+
+header span{
+    text-transform: capitalize;
+}
+
+nav a{
+    /* text-decoration: underline; */
+    /* text-decoration-color: red; */
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: underline red dotted 4px;
+}
+
+p{
+    text-align: justify;
+    text-indent: 20px;
+    text-align-last: right;
+    letter-spacing: 0.3rem;/*espaço entre as letras*/
+    word-spacing: 0.3rem; /*espaço das palavras*/
+    white-space: wrap; /*controla se vai ter ou não quebra de linha.*/
+}
+
+p::first-letter{
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+/* Adjacentes */
+h2+span{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: brown;
+}
+/* Atributos */
+input[type=radio]{
+    accent-color: green;
+}
+input[type=checkbox]:checked + span{
+    color: blue;
+}
+
+/* Seletor filho */
+header > img{
+    filter: invert(100);
+}
+
+/* Seletor vizinho */
+article#pratos p:active ~ table{
+    border: dashed 2px green; /*sort hant*/
+}
+
+article#pratos p:active{
+    color: red;
+}
+
+header div.slogan{
+    background-color: #000;
+    color: #fff;
+    padding: 0 0 7px 0;
+}
+
+textarea{
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -o-border-radius: 12px;
+    -ms-border-radius: 12px;
+    border-radius: 12px;
+}
+
